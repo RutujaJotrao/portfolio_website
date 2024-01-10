@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutuja's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav_content">
+            <div class="logo">
+                <a href="#">Rutuja Jotrao</a>
+            </div>
+
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+
+            <input type="checkbox" name="check" id="check">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="skills.html">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="whole_page">
+        <div class="main_content">
+            <div class="header_content">
+                <p>I am a <span class="developer-status">Developer</span></p>
+            </div>
+            <div class="info-item">
+                <label><b>Experience:</b></label>
+                <ul>
+                    <li><b>Intern at 5TechG, Pune</b>
+                        <br>Dec 2023 - Present
+                    </li> &nbsp;&nbsp;&nbsp;
+                    <li><b>Intern at Barclays (BGSC), Pune</b>
+                        <br>Jun 2023 - Aug 2023
+                    </li> &nbsp;&nbsp;&nbsp;
+                    <li><b>Intern at Systech, Pune</b>
+                        <br>May 2023 - Jul 2023
+                    </li> &nbsp;&nbsp;&nbsp;
+                    <li><b>Volunteer, Social Welfare, VIT Pune</b>
+                        <br>May 2022 - Jun 2022
+                    </li> &nbsp;&nbsp;&nbsp;
+                </ul>
+            </div>
+
+            <div class="info-item">
+                <label><b>Specificity:</b></label>
+                <p>Web Development, App Development, Front-end Development</p>
+            </div>
+
+            <div class="info-item">
+                <label><b>Address:</b></label>
+                <p><a href="https://maps.google.com/?q=Sangli+Maharashtra,India" target="_blank">Sangli, Maharashtra,
+                        India</a></p>
+            </div>
+
+            <div class="info-item">
+                <label><b>Email:</b></label>
+                <p><a href="mailto:rutuu84@gmail.com">rutuu84@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/rutuja-jotrao-361b07232/" target="_blank"><img src="Images/linkdin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/RutujaJotrao" target="_blank"><img src="Images//github.png" alt="GitHub"></a>
+        <a href="mailto:rutuu84@gmail.com"><img src="Images/gmail.png" alt="Email"></a>
+        <span>|</span>
+        Phone: <a href="tel:9657892745">9657892745</a>
+    </footer>
+</body>
+
+<script>
+    const developerStatus = document.querySelector('.developer-status');
+    const statuses = ['Engineer', 'Designer', 'Student'];
+    let currentIndex = 0;
+
+    function updateStatus() {
+        developerStatus.textContent = statuses[currentIndex];
+        currentIndex = (currentIndex + 1) % statuses.length;
+    }
+
+    setInterval(updateStatus, 1800);
+</script>
+
+</html>
